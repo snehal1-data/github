@@ -1,0 +1,21 @@
+name: Python application
+
+on:
+  push:
+    branches:
+        -main
+        -newB
+  
+
+jobs:
+  demo-commands1:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show current working directory
+        run: pwd
+
+      - name: List files in the directory
+        run: ls -la
+   
